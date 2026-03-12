@@ -30,8 +30,6 @@ z-index:-2;
 
 }
 
-/* Gradient animation */
-
 @keyframes gradientMove{
 
 0%{background-position:0% 50%;}
@@ -72,7 +70,7 @@ opacity:0;
 
 }
 
-/* Container */
+/* Main container */
 
 .container{
 
@@ -86,7 +84,7 @@ z-index:2;
 
 }
 
-/* Logo animation */
+/* Logo */
 
 .logo{
 
@@ -121,7 +119,18 @@ margin-top:15px;
 .subtitle{
 
 font-size:18px;
-margin-bottom:30px;
+margin-bottom:20px;
+
+}
+
+/* Section titles */
+
+.section-title{
+
+margin-top:25px;
+margin-bottom:10px;
+font-size:18px;
+font-weight:bold;
 
 }
 
@@ -129,22 +138,43 @@ margin-bottom:30px;
 
 .btn{
 
-display:block;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
 width:260px;
 margin:12px auto;
 padding:14px;
+
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
 color:white;
+
 transition:.3s;
 
+}
+
+/* Icon size */
+
+.btn i{
+font-size:18px;
+}
+
+/* Button text alignment */
+
+.btn span{
+flex:1;
+text-align:center;
 }
 
 /* Button colors */
 
 .menu{
 background:#8E44AD;
+font-size:17px;
+box-shadow:0 6px 14px rgba(0,0,0,0.25);
 }
 
 .instagram{
@@ -163,15 +193,7 @@ background:#1877F2;
 background:#34A853;
 }
 
-/* Icon spacing */
-
-.btn i{
-
-margin-right:10px;
-
-}
-
-/* Hover animation */
+/* Hover effect */
 
 .btn:hover{
 
@@ -197,7 +219,7 @@ margin-right:auto;
 
 }
 
-/* Mobile optimization */
+/* Mobile responsive */
 
 @media (max-width:768px){
 
