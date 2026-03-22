@@ -14,11 +14,93 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<style>
+/* REMOVE TOP SPACE */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* PULL CONTENT UP */
+.container {
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+}
+
+/* LOGO */
+.logo {
+  width: 160px;
+  max-width: 80%;
+  margin-top: 0 !important;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+}
+
+/* HEADINGS & SUBTITLES */
+h1 { margin: 5px 0; }
+.subtitle { margin: 0 0 10px 0; }
+.section-title { margin: 15px 0 5px 0; font-weight: 600; }
+
+/* BUTTON UNIFORMITY */
+.btn {
+  display: inline-flex;
+  align-items: center;        
+  justify-content: center;    
+  gap: 8px;                   
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 260px;           
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin: 5px 0;
+  transition: all 0.2s ease;
+}
+
+.btn span {
+  display: inline-block;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+/* BUTTON COLORS */
+.btn.menu { background-color: #FF6F00; color: #fff; }
+.btn.instagram { background-color: #E1306C; color: #fff; }
+.btn.tiktok { background-color: #000; color: #fff; }
+.btn.facebook { background-color: #1877F2; color: #fff; }
+.btn.snapchat { background-color: #FFFC00; color: #000; font-weight: 700; }
+.btn.google { 
+  background: linear-gradient(90deg, #4285F4 25%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
+  color: #fff; 
+}
+
+/* HOVER EFFECTS */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* PROMO BOX */
+.review-promo {
+  margin: 12px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+</style>
+
 </head>
 
 <body>
 
-<!-- Animated gradient background -->
 <div class="background-animation"></div>
 
 <!-- Floating bubbles -->
@@ -28,7 +110,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <div class="bubble b4"></div>
 <div class="bubble b5"></div>
 
-<!-- Main container -->
 <div class="container">
 
 <!-- Logo -->
@@ -49,24 +130,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <p class="section-title">📲 Follow Our Pages</p>
 <div class="social-buttons">
 
-  <a href="https://instagram.com/tabsway" class="btn instagram" target="_blank">
+  <a href="https://www.instagram.com/tabswaykitchenusa/" class="btn instagram" target="_blank">
     <i class="fa-brands fa-instagram"></i>
     <span>Follow us on Instagram</span>
   </a>
 
-  <a href="https://tiktok.com/@tabsway" class="btn tiktok" target="_blank">
+  <a href="https://www.tiktok.com/@tabsway.kitchen.usa" class="btn tiktok" target="_blank">
     <i class="fa-brands fa-tiktok"></i>
     <span>Follow us on TikTok</span>
   </a>
 
-  <a href="https://facebook.com/tabsway" class="btn facebook" target="_blank">
+  <a href="https://www.facebook.com/Tabsway-Kitchen-USA-61578801310852/" class="btn facebook" target="_blank">
     <i class="fa-brands fa-facebook"></i>
     <span>Like & Follow our Facebook Page</span>
   </a>
 
+  <a href="https://www.snapchat.com/add/tabswaykitchen" class="btn snapchat" target="_blank">
+    <i class="fa-brands fa-snapchat"></i>
+    <span>Add us on Snapchat</span>
+  </a>
+
   <a href="https://g.page/YOUR_GOOGLE_PLACE_ID/review" class="btn google" target="_blank">
     <i class="fa-solid fa-star"></i>
-    <span>Leave a Google Review</span>
+    <span>Leave a Google Review & Get 5% OFF</span>
   </a>
 
 </div>
