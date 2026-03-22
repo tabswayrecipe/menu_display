@@ -41,16 +41,7 @@ h1 { margin: 5px 0; }
 .subtitle { margin: 0 0 15px 0; }
 .section-title { margin: 20px 0 10px 0; font-weight: 600; }
 
-/* BUTTON UNIFORMITY */
-.btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 15px;
-  align-items: stretch; /* make all buttons same height */
-}
-
+/* Button styles */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -61,22 +52,19 @@ h1 { margin: 5px 0; }
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  min-width: 260px;
+  margin: 5px;
+  flex: 1 1 200px; /* allows flex wrapping */
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  margin: 0;
-  flex: 1 1 200px;
   transition: all 0.2s ease;
 }
 
-/* Icon + text vertical alignment */
 .btn span {
   display: inline-block;
   line-height: 1.2;
   vertical-align: middle;
-  text-align: center;
 }
 
-/* BUTTON COLORS */
+/* Button colors */
 .btn.menu { background-color: #FF6F00; color: #fff; }
 .btn.instagram { background-color: #E1306C; color: #fff; }
 .btn.tiktok { background-color: #000; color: #fff; }
@@ -91,6 +79,15 @@ h1 { margin: 5px 0; }
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* Social buttons container as flex for desktop */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
 }
 
 /* Promotion box */
@@ -114,15 +111,14 @@ h1 { margin: 5px 0; }
 <p class="subtitle">Great Food • Fast Service • Friendly Atmosphere</p>
 
 <p class="section-title">🍜 Order Your Favorite Meal</p>
-<div class="btn-container">
-  <a href="https://tabswaykitchen.com/" class="btn menu" target="_blank">
-    <i class="fa-solid fa-utensils"></i>
-    <span>View Menu & Order Online</span>
-  </a>
-</div>
+<a href="https://tabswaykitchen.com/" class="btn menu" target="_blank">
+  <i class="fa-solid fa-utensils"></i>
+  <span>View Menu & Order Online</span>
+</a>
 
 <p class="section-title">📲 Follow Our Pages</p>
-<div class="btn-container">
+<div class="social-buttons">
+
   <a href="https://www.instagram.com/tabswaykitchenusa/" class="btn instagram" target="_blank">
     <i class="fa-brands fa-instagram"></i>
     <span>Follow us on Instagram</span>
@@ -147,6 +143,7 @@ h1 { margin: 5px 0; }
     <i class="fa-solid fa-star"></i>
     <span>Leave a Google Review & Get 5% OFF</span>
   </a>
+
 </div>
 
 <div class="review-promo">
