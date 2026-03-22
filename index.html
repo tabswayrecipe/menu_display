@@ -7,15 +7,11 @@
 
 <title>Tabsway Kitchen</title>
 
-<!-- Main stylesheet -->
 <link rel="stylesheet" href="style.css">
-
-<!-- FontAwesome icons -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* REMOVE TOP SPACE */
 body {
   margin: 0;
   padding: 0;
@@ -23,52 +19,61 @@ body {
   background: #f5f5f5;
 }
 
-/* PULL CONTENT UP */
+/* Container */
 .container {
-  margin-top: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 20px !important;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
   text-align: center;
 }
 
-/* LOGO */
+/* Logo */
 .logo {
-  width: 160px;
+  width: 180px;
   max-width: 80%;
-  margin-top: 0 !important;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
 }
 
-/* HEADINGS & SUBTITLES */
+/* Headings */
 h1 { margin: 5px 0; }
-.subtitle { margin: 0 0 10px 0; }
-.section-title { margin: 15px 0 5px 0; font-weight: 600; }
+.subtitle { margin: 0 0 15px 0; }
+.section-title { margin: 20px 0 10px 0; font-weight: 600; }
 
 /* BUTTON UNIFORMITY */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  align-items: stretch; /* make all buttons same height */
+}
+
 .btn {
   display: inline-flex;
-  align-items: center;        
-  justify-content: center;    
-  gap: 8px;                   
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 14px 22px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  min-width: 260px;           
+  min-width: 260px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  margin: 5px 0;
+  margin: 0;
+  flex: 1 1 200px;
   transition: all 0.2s ease;
 }
 
+/* Icon + text vertical alignment */
 .btn span {
   display: inline-block;
   line-height: 1.2;
   vertical-align: middle;
+  text-align: center;
 }
 
 /* BUTTON COLORS */
@@ -82,15 +87,15 @@ h1 { margin: 5px 0; }
   color: #fff; 
 }
 
-/* HOVER EFFECTS */
+/* Hover effect */
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
-/* PROMO BOX */
+/* Promotion box */
 .review-promo {
-  margin: 12px 0;
+  margin: 15px 0;
   font-size: 15px;
   font-weight: 500;
   color: #333;
@@ -101,35 +106,23 @@ h1 { margin: 5px 0; }
 
 <body>
 
-<div class="background-animation"></div>
-
-<!-- Floating bubbles -->
-<div class="bubble b1"></div>
-<div class="bubble b2"></div>
-<div class="bubble b3"></div>
-<div class="bubble b4"></div>
-<div class="bubble b5"></div>
-
 <div class="container">
 
-<!-- Logo -->
 <img src="logo-v2.png" class="logo">
 
-<!-- Welcome text -->
 <h1>Welcome to Tabsway Kitchen</h1>
 <p class="subtitle">Great Food • Fast Service • Friendly Atmosphere</p>
 
-<!-- ORDER SECTION -->
 <p class="section-title">🍜 Order Your Favorite Meal</p>
-<a href="https://tabswaykitchen.com/" class="btn menu" target="_blank">
-  <i class="fa-solid fa-utensils"></i>
-  <span>View Menu & Order Online</span>
-</a>
+<div class="btn-container">
+  <a href="https://tabswaykitchen.com/" class="btn menu" target="_blank">
+    <i class="fa-solid fa-utensils"></i>
+    <span>View Menu & Order Online</span>
+  </a>
+</div>
 
-<!-- SOCIAL SECTION -->
 <p class="section-title">📲 Follow Our Pages</p>
-<div class="social-buttons">
-
+<div class="btn-container">
   <a href="https://www.instagram.com/tabswaykitchenusa/" class="btn instagram" target="_blank">
     <i class="fa-brands fa-instagram"></i>
     <span>Follow us on Instagram</span>
@@ -154,10 +147,8 @@ h1 { margin: 5px 0; }
     <i class="fa-solid fa-star"></i>
     <span>Leave a Google Review & Get 5% OFF</span>
   </a>
-
 </div>
 
-<!-- Promotion box -->
 <div class="review-promo">
   ⭐ Leave a Google review and show it to staff to receive <b>5% OFF your next purchase</b>
 </div>
